@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masuk / Daftar | Jelajah Dunia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <a href="Home.html" class="logo">
+            <div class="logo-frame"><img src="favicon.png" alt="Logo" class="logo-img"></div>
+            <span class="brand-name">Jelajah<span>Dunia</span></span>
+        </a>
+        <nav>
+            <a href="Home.html">Home</a>
+            <a href="wisata.html">Wisata</a>
+            <a href="paket.html">Paket</a>
+            <a href="event.html">Event</a>
+            <a href="about.html">About</a>
+        </nav>
+        <div class="navbar-actions">
+            <a href="about.html" class="btn-premium" style="padding: 10px 24px; font-size: 0.9rem;">Contact Me</a>
+            <div id="auth-area">
+                <a href="auth.html" class="btn-outline">Login</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container py-80" style="display: flex; justify-content: center; align-items: center; min-height: 70vh;">
+        <div class="card-v2 card-padding" style="max-width: 450px; width: 100%;">
+            
+            <div id="login-box">
+                <h2 class="font-outfit text-center mb-40">Selamat <span class="text-accent">Datang</span></h2>
+                <form id="login-form" class="contact-form">
+                    <input type="email" id="login-email" placeholder="Alamat Email" required>
+                    <input type="password" id="login-password" placeholder="Kata Sandi" required>
+                    <button type="submit" class="btn-premium w-100">Masuk</button>
+                </form>
+                <p class="small-text text-center" style="margin-top: 20px;">
+                    Belum punya akun? <a href="#" id="to-register" class="text-accent" style="text-decoration: none; font-weight: 600;">Daftar di sini</a>
+                </p>
+            </div>
+
+            <div id="register-box" style="display: none;">
+                <h2 class="font-outfit text-center mb-40">Buat <span class="text-accent">Akun</span></h2>
+                <form id="register-form" class="contact-form">
+                    <input type="text" id="reg-username" placeholder="Nama Lengkap" required>
+                    <input type="email" id="reg-email" placeholder="Alamat Email" required>
+                    <input type="password" id="reg-password" placeholder="Kata Sandi Baru" required>
+                    <button type="submit" class="btn-premium w-100">Daftar Sekarang</button>
+                </form>
+                <p class="small-text text-center" style="margin-top: 20px;">
+                    Sudah punya akun? <a href="#" id="to-login" class="text-accent" style="text-decoration: none; font-weight: 600;">Masuk di sini</a>
+                </p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>© 2026 Jelajah Dunia Bersama. Crafted by Gesper Chaeleo.</footer>
+
+    <script src="auth.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
