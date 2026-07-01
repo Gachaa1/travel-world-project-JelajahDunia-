@@ -17,4 +17,18 @@ window.onload = function () {
             authArea.innerHTML = '<a href="auth.html" class="btn-outline">Login</a>';
         }
     }
+
+    // Fitur Back to Top Melayang
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 300) {
+            $('#btn-top').fadeIn(300);
+        } else {
+            $('#btn-top').fadeOut(300);
+        }
+    });
+
+    $('#btn-top').click(function () {
+        $('html, body').animate({ scrollTop: 0 }, 500);
+        return false;
+    });
 };

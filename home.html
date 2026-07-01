@@ -10,13 +10,14 @@
 </head>
 
 <body>
+
     <header class="navbar">
-        <a href="Home.html" class="logo">
+        <a href="home.html" class="logo">
             <div class="logo-frame"><img src="favicon.png" alt="Logo" class="logo-img"></div>
             <span class="brand-name">Jelajah<span>Dunia</span></span>
         </a>
         <nav>
-            <a href="Home.html">Home</a>
+            <a href="home.html">Home</a>
             <a href="wisata.html">Wisata</a>
             <a href="paket.html">Paket</a>
             <a href="event.html">Event</a>
@@ -85,7 +86,32 @@
         </section>
     </main>
 
+    <button id="btn-top" class="back-to-top">⬆</button>
     <footer>© 2026 Jelajah Dunia Bersama. Crafted by Gesper Chaeleo.</footer>
+
+    <div id="discount-popup" class="popup-overlay">
+        <div class="popup-content card-v2">
+            <button id="close-popup" class="close-btn">&times;</button>
+
+            <div class="card-padding text-center">
+                <span class="card-icon" style="font-size: 3.5rem;">🎉</span>
+                <h2 class="font-outfit mb-40">Diskon Spesial <span class="text-accent">Jelajah Dunia</span></h2>
+                <p class="lead-text" style="font-size: 0.95rem;">Selamat! Kamu mendapatkan potongan harga <strong
+                        class="text-accent">20%</strong> untuk pemesanan paket wisata pertamamu.</p>
+                <p class="small-text" style="margin: 15px 0 10px 0;">Gunakan kode kupon di bawah ini:</p>
+
+                <div class="coupon-box text-accent">JELAJAH20</div>
+
+                <div class="mt-60">
+                    <a href="paket.html" class="btn-premium">Klaim Kupon</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <script src="popup.js"></script>
 </body>
 
 </html>
